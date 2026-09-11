@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>골키퍼 잘하는 방법 완전 정복</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Pretendard', '맑은 고딕', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1b4332;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        /* 골키퍼 버튼 스타일 */
+        .gk-btn {
+            background-color: #2d6a4f;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 18px 45px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(45, 106, 79, 0.3);
+        }
+
+        .gk-btn:hover {
+            background-color: #1b4332;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(45, 106, 79, 0.4);
+        }
+
+        .gk-btn:active {
+            transform: translateY(0);
+        }
+
+        /* 내용 영역 (기본은 숨김 처리) */
+        .content-box {
+            display: none;
+            margin-top: 40px;
+            text-align: left;
+            animation: fadeIn 0.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            color: #2d6a4f;
+            border-bottom: 2px solid #52b788;
+            padding-bottom: 8px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .tip-list {
+            list-style: none;
+        }
+
+        .tip-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
+        .tip-list li::before {
+            content: "⚽";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #1b4332;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>최고의 골키퍼가 되는 길</h1>
+        <p class="subtitle">아래 버튼을 눌러 골키퍼 잘하는 실전 노하우를 확인해보세요!</p>
+        
+        <!-- {골키퍼} 버튼 -->
+        <button class="gk-btn" onclick="toggleContent()">{골키퍼}</button>
+
+        <!-- 버튼을 누르면 나오는 내용 -->
+        <div id="gkContent" class="content-box">
+            
+            <h2 class="section-title">1. 기본 자세 및 포지셔닝 (Positioning)</h2>
+            <ul class="tip-list">
+                <li><span class="highlight">준비 자세(Set Position):</span> 무릎을 살짝 굽히고 체중을 앞발가락 쪽에 실어 어떤 방향으로든 즉시 뛸 수 있게 합니다.</li>
+                <li><span class="highlight">각도 좁히기:</span> 슈팅할 때 골대 안쪽에만 있지 말고 앞으로 나와 슈팅 각도를 좁혀야 합니다.</li>
+                <li><span class="highlight">골대 기준점 잡기:</span> 항상 자신의 위치가 골대 중앙에 있는지 각도를 감각적으로 파악하세요.</li>
+            </ul>
+
+            <h2 class="section-title">2. 캐칭 및 펀칭 기술</h2>
+            <ul class="tip-list">
+                <li><span class="highlight">W자 잡기 (가슴 높이 이상):</span> 양손의 엄지와 검지를 이어 붙여 'W' 모양을 만들어 공이 빠져나가지 않게 잡습니다.</li>
+                <li><span class="highlight">바스켓 캐치 (낮은 공):</span> 몸을 낮추고 양손을 바구니처럼 만들어 공을 가슴 쪽으로 끌어안습니다.</li>
+                <li><span class="highlight">확실한 펀칭:</span> 캐칭이 불확실한 경합 상황이나 빗물로 공이 미끄러울 때는 확실하게 멀리, 측면으로 쳐냅니다.</li>
+            </ul>
+
+            <h2 class="section-title">3. 멘탈 및 커뮤니케이션</h2>
+            <ul class="tip-list">
+                <li><span class="highlight">수비 리드:</span> 골키퍼는 경기장 전체를 볼 수 있습니다. 끊임없이 수비수들에게 "자리를 잡아라", "뒤를 봐라" 하고 크게 소리치세요.</li>
+                <li><span class="highlight">실수 후 멘탈 관리:</span> 골을 먹혀도 지나간 일입니다. 다음 플레이에 집중하는 강한 멘탈이 필수입니다.</li>
+            </ul>
+
+            <h2 class="section-title">4. 현대 축구에서의 빌드업 (Build-up)</h2>
+            <ul class="tip-list">
+                <li><span class="highlight">발밑 기술:</span> 단순한 방어가 아닌, 최후방 공격의 시작점입니다. 패스 연습과 트래핑 연습을 소홀히 하지 마세요.</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("gkContent");
+            
+            // 토글 기능 (보이기 / 숨기기)
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
